@@ -13,7 +13,7 @@ User >>> You're my bot
 Bot >>> You monster
 ```
 
-<img src="https://github.com/polakowo/gpt2bot/blob/master/reddit.png?raw=true" width=80>
+![](docs/assets/reddit.png)
   
 ## How to use?
 
@@ -71,6 +71,6 @@ $ python run_telegram_bot.py
 
 ### 3. Start chatting!
 
-![](telegram_bot.gif)
+![](docs/assets/telegram_bot.gif)
 
 Just start texting. Append "@gif" for the bot to also generate a GIF. To reset, type "/start".
