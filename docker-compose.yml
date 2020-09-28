@@ -2,10 +2,10 @@
 version: '3.8'
 services:
    
-   gtp2bot:
+   gtp2bot-tg:
      image: lucmichalski/gtp2bot-large:cpu-latest
-     container_name: ${NAMESPACE}-bot
+     container_name: ${NAMESPACE}-telegram
      build:
        context: .
        dockerfile: Dockerfile
-     
+     command: ["python3", "run_telegram_bot.py"]     

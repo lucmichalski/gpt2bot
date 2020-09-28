@@ -1,0 +1,17 @@
+---
+version: '3.8'
+services:
+   
+   gpt2bot-tg:
+     image: lucmichalski/gtp2bot-large:gpu-latest
+     container_name: ${NAMESPACE}-telegram
+     build:
+       context: .
+       dockerfile: Dockerfile.gpu
+     volumes:
+     - ./chatbot-gpu.cfg:/opt/service/chatbot.cfg
+     - model-data:/root/.cache/
+     command: ["python3", "run_telegram_bot.py"]     
+
+volumes:
+  model-data:

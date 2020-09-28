@@ -2,3 +2,4 @@ __pycache__
 .ipynb_checkpoints
 .idea
 chatbot.cfg
+chatbot-gpu.cfg
