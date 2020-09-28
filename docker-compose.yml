@@ -1,0 +1,11 @@
+---
+version: '3.8'
+services:
+   
+   gtp2bot:
+     image: lucmichalski/gtp2bot-large:cpu-latest
+     container_name: ${NAMESPACE}-bot
+     build:
+       context: .
+       dockerfile: Dockerfile
+     
